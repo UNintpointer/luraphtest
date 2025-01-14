@@ -38,15 +38,15 @@ local tabholder = menu.bg.bg.bg.bg.bg.bg.main.group
 local tabviewer = menu.bg.bg.bg.bg.bg.bg.tabbuttons
 
 local library = {
-   Title = 'eclipse.wtf | <font color="rgb(189, 172, 255)">fallen</font>',
+   Title = 'Nexora.vip | <font color="rgb(252, 154, 247)">universal</font>',
    AnimatedText = false,
    keybind = Enum.KeyCode.End,
    Colors = {
-      libColor = Color3.fromRGB(189, 172, 255),
+      libColor = Color3.fromRGB(252, 154, 247),
       riskyColor = Color3.fromRGB(255, 0, 0),
       FontColor = Color3.fromRGB(255, 255, 255),
       MainColor = Color3.fromRGB(14, 14, 14),
-      AccentColor = Color3.fromRGB(189, 172, 255),
+      AccentColor = Color3.fromRGB(252, 154, 247),
       OutlineColor = Color3.fromRGB(15, 15, 15),
    },
    Enabled = true,
@@ -98,18 +98,18 @@ menu.bg.pre.Text = ""
 
 task.spawn(function()
    local textList = { 
-       '', 'e', 'ec', 'ecl', 'ecli', 'eclip', 'eclipse', 'eclipse.', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
-       'eclipse.<font color="rgb(189, 172, 255)">wt</font>', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font>',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> |', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | u',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | un', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | uni',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univ', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univers',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | universa', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | universal',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | universa', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univers',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univer', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | unive',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | univ', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | uni',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | un', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font> | u',
-       'eclipse.<font color="rgb(189, 172, 255)">wtf</font> |', 'eclipse.<font color="rgb(189, 172, 255)">wtf</font>',
-       'eclipse.<font color="rgb(189, 172, 255)">wt</font>', 'eclipse.<font color="rgb(189, 172, 255)">w</font>',
+       '', 'e', 'ec', 'ecl', 'ecli', 'eclip', 'eclipse', 'eclipse.', 'eclipse.<font color="rgb(252, 154, 247)">w</font>',
+       'eclipse.<font color="rgb(252, 154, 247)">wt</font>', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font>',
+       'eclipse.<font color="rgb(252, 154, 247)">wtf</font> |', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | u',
+       'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | un', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | uni',
+       'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | univ', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | univers',
+       'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | universa', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | universal',
+       'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | universa', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | univers',
+       'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | univer', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | unive',
+       'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | univ', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | uni',
+       'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | un', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font> | u',
+       'eclipse.<font color="rgb(252, 154, 247)">wtf</font> |', 'eclipse.<font color="rgb(252, 154, 247)">wtf</font>',
+       'eclipse.<font color="rgb(252, 154, 247)">wt</font>', 'eclipse.<font color="rgb(252, 154, 247)">w</font>',
        'eclipse.', 'eclipse', 'eclips', 'eclip', 'ecli', 'ecl', 'ec', 'e'
    }
    while wait(0.5) do
@@ -119,7 +119,7 @@ task.spawn(function()
                wait(0.5)
            end 
        else
-           menu.bg.pre.Text = 'eclipse.wtf | <font color="rgb(189, 172, 255)">fallen</font>'
+           menu.bg.pre.Text = 'eclipse.wtf | <font color="rgb(252, 154, 247)">fallen</font>'
        end
    end
 end)  
@@ -155,7 +155,7 @@ function library:AddToRegistry(Instance, Properties, IsHud)
             library:Create('UIListLayout', {Padding = UDim.new(0, 4);FillDirection = Enum.FillDirection.Vertical;SortOrder = Enum.SortOrder.LayoutOrder;Parent = library.NotificationArea});
             function library:Notify(Text, Time)
                local XSize, YSize = library:GetTextBounds(Text, Enum.Font.Code, 14);YSize = YSize + 7
-               local NotifyOuter = library:Create('Frame', {BorderColor3 = Color3.new(189, 172, 255);Position = UDim2.new(0, 100, 0, 10);Size = UDim2.new(0, 0, 0, YSize);ClipsDescendants = true;Transparency = 0,ZIndex = 100;Parent = library.NotificationArea});
+               local NotifyOuter = library:Create('Frame', {BorderColor3 = Color3.new(252, 154, 247);Position = UDim2.new(0, 100, 0, 10);Size = UDim2.new(0, 0, 0, YSize);ClipsDescendants = true;Transparency = 0,ZIndex = 100;Parent = library.NotificationArea});
                library:Create('UIGradient', {Color = ColorSequence.new{ColorSequenceKeypoint.new(0, library.Colors.MainColor), ColorSequenceKeypoint.new(0.1, library.Colors.MainColor), ColorSequenceKeypoint.new(0.6, library.Colors.MainColor), ColorSequenceKeypoint.new(1, library.Colors.MainColor)},Rotation = -120;Parent = NotifyOuter});
                local NotifyInner = library:Create('Frame', {BackgroundColor3 = library.Colors.MainColor;BorderColor3 = library.Colors.OutlineColor;BorderMode = Enum.BorderMode.Inset;Size = UDim2.new(1, 0, 1, 0);ZIndex = 101;Parent = NotifyOuter});
                local InnerFrame = library:Create('Frame', {BackgroundColor3 = Color3.new(1, 1, 1);BorderSizePixel = 0;Position = UDim2.new(0, 1, 0, 1);Size = UDim2.new(1, -2, 1, -2);ZIndex = 102;Parent = NotifyInner;});
@@ -210,8 +210,8 @@ function library:AddToRegistry(Instance, Properties, IsHud)
                            for i,v in next, library.tabbuttons do
                               local state = v == newButton
                               local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
-                              local imageTweenStart = TweenService:Create(v, tweenInfo, {ImageColor3 = Color3.fromRGB(189, 172, 255)})
-                              local textTweenStart = TweenService:Create(v.text, tweenInfo, {TextColor3 = Color3.fromRGB(189, 172, 255)})
+                              local imageTweenStart = TweenService:Create(v, tweenInfo, {ImageColor3 = Color3.fromRGB(252, 154, 247)})
+                              local textTweenStart = TweenService:Create(v.text, tweenInfo, {TextColor3 = Color3.fromRGB(252, 154, 247)})
                               local imageTweenEnd = TweenService:Create(v, tweenInfo, {ImageColor3 = Color3.fromRGB(0,0,0)})
                               local textTweenEnd = TweenService:Create(v.text, tweenInfo, {TextColor3 = Color3.fromRGB(125, 125, 125)})
                               if state then
